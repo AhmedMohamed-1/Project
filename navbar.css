@@ -121,7 +121,7 @@ img {
     position: relative;
     font-size: 22px;
     font-weight: 300;
-    border-width: 3px;
+    border-width: 0px;
     /* Border thickness */
     border-style: solid;
     border-color: transparent;
@@ -155,7 +155,7 @@ img {
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
-    padding: 6px;
+    padding: 4px;
     border-radius: 20px;
     animation: 3s spin linear infinite;
 }
