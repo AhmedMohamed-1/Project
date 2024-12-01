@@ -1,0 +1,63 @@
+/* Main container for the tracking section */
+.tracking-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 0;
+  }
+  
+  /* Border box around the tracking content */
+  .tracking-section-border {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* Title styles */
+  .title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Layout for search bar and button */
+  .tracking-section-search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Input field styling */
+  .tracking-input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button styling */
+  .tracking-button {
+    padding: 10px 20px;
+    background-color: #ff6a00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tracking-button:hover {
+    background-color: #e55a00;
+  }
+  

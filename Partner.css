@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.partner-section-border {
+    /*background-color: aquamarine;*/
+    /*border-style: solid;*/
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.partner-section-label {
+    font-family: Poppins;
+    font-size: 40px;
+    text-decoration: none;
+    text-align: center;
+    cursor: default;
+}
+
+
+.partner-section-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+#bx:hover {
+    background-color: rgb(205, 205, 185);
+}
+
+#bx {
+    display: flex;
+    /* Activates flexbox layout */
+    flex-direction: column;
+    /* Stacks children vertically */
+    align-items: center;
+    /* Centers content horizontally */
+    justify-content: center;
+    /* Centers content vertically */
+    text-align: center;
+    /* Aligns text inside each element */
+    padding: 20px;
+    /* Adds space inside the div */
+    background-color: antiquewhite;
+    cursor: default;
+}
+
+#bx i {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+#bx h2 {
+    font-weight: bold;
+    /* Makes text bold */
+    margin: 0;
+    /* Removes extra margins */
+    margin-bottom: 10px;
+}
+
+#bx p {
+    margin: 0;
+    /* Removes default paragraph margins */
+    font-size: 16px;
+    /* Adjusts the font size */
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+#bx a {
+    font-weight: bold;
+    /* Makes link text bold */
+    color: brown;
+    /* Adds a color to the link */
+    text-decoration: none;
+    /* Removes underline from the link */
+    padding: 10px 20px;
+    /* Adds padding to the link for button-like appearance */
+    border: 1px solid brown;
+    /* Adds a border */
+    border-radius: 5px;
+    /* Rounds the corners */
+    transition: background-color 0.3s, color 0.3s;
+    /* Adds smooth hover effect */
+    cursor: pointer;
+}
+
+#bx a:hover {
+    background-color: brown;
+    /* Changes background on hover */
+    color: white;
+    /* Changes text color on hover */
+}
+
+
+.partner-section-2nd-label {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    cursor: default;
+}
+
+
+.partner-section-companies-logos {
+    display: flex;
+    flex-wrap: wrap;
+    /* Ensures that logos wrap to the next line when needed */
+    justify-content: space-between;
+    /* Distribute logos evenly */
+    align-items: center;
+    /* Center-align logos vertically */
+    gap: 20px;
+    /* Space between logos */
+    padding: 20px;
+    margin: 0 auto;
+    /* Center the section */
+    max-width: 800px;
+    /* Limit the width of the section */
+}
+
+.partner-logo {
+    display: inline-block;
+    width: 145px;
+    /* Set a fixed width */
+    height: auto;
+    /* Maintain aspect ratio */
+    flex-shrink: 0;
+    /* Prevent logos from shrinking */
+}
+
+.partner-logo img {
+    cursor: default;
+    width: 145px;
+    /* Adjust width as needed */
+    height: 44px;
+    /* Adjust height as needed */
+    filter: invert(47%) sepia(13%) saturate(520%) hue-rotate(183deg) brightness(90%) contrast(101%);
+}
