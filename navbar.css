@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
 body {
-    margin-top: 100px ;
+    margin: 0px;
+    margin-top: 100px;
 }
 
 * {
@@ -66,7 +68,9 @@ img {
     transition: background-color 0.5s;
 }
 
-.sign-up-btn {
+/*SIGN UP BUTTON OLD CODE*/
+
+/* .sign-up-btn {
     font-size: 22px;
     font-weight: 300px;
     border-width: 1px;
@@ -75,7 +79,7 @@ img {
     border-radius: 20px;
     color: #F08922;
     transition: background-color 0.4s;
-}
+} */
 
 .sign-in-btn:hover {
     background-color: rgba(0, 0, 0, 1);
@@ -96,4 +100,77 @@ img {
 .sign-up-btn:active {
     transition: none;
     background-color: rgba(25, 22, 48, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sign up Button AFTER ANIMATION */
+.sign-up-btn {
+    position: relative;
+    font-size: 22px;
+    font-weight: 300;
+    border-width: 3px;
+    /* Border thickness */
+    border-style: solid;
+    border-color: transparent;
+    /* Initially transparent border */
+    border-radius: 20px;
+    color: #F08922;
+    background-color: transparent;
+    padding: 12px 24px;
+    /* Adjust padding for content */
+    text-align: center;
+    overflow: hidden;
+    /* Ensures content doesn't overflow */
+    background-color: #000000;
+    transition: background-color 0.4s;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.sign-up-btn::after,
+.sign-up-btn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #f60000, #00f693, #006aff, #ff0095, #ff0101);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 6px;
+    border-radius: 20px;
+    animation: 3s spin linear infinite;
+}
+
+.sign-up-btn::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
 }
