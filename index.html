@@ -12,8 +12,21 @@
         <link href="css/track.css" rel="stylesheet">
         <link href="css/contact.css" rel="stylesheet">
         <link href="css/footer.css" rel="stylesheet">
-
+        <link href="css/chatbot.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+        <!-- JS for Chat bot  -->
+        <script>
+                function toggleChat() {
+                        var chatBox = document.getElementById('chat-box');
+                        if (chatBox.style.display === 'none' || chatBox.style.display === '') {
+                                chatBox.style.display = 'block';
+                        } else {
+                                chatBox.style.display = 'none';
+                        }
+                }
+        </script>
+
 
 
         <title>ShipFast</title>
@@ -98,28 +111,28 @@
 
                         <div class="partner-section-companies-logos">
                                 <div class="partner-logo">
-                                        <img src="img/amazon_- logo-1000x302.svg">
+                                        <img src="/Website/img/amazon_- logo-1000x302.svg">
                                 </div>
                                 <div class="partner-logo">
-                                        <img src="img/toyota_- logo-500x83.svg">
+                                        <img src="/Website/img/toyota_- logo-500x83.svg">
                                 </div>
                                 <div class="partner-logo">
-                                        <img src="img/sony_- logo-250x44.svg">
+                                        <img src="/Website/img/sony_- logo-250x44.svg">
                                 </div>
                                 <div class="partner-logo">
-                                        <img src="img/oracle_- logo-100x13.svg">
+                                        <img src="/Website/img/oracle_- logo-100x13.svg">
                                 </div>
                                 <div class="partner-logo">
-                                        <img src="img/apple_- logo-250x308.svg">
+                                        <img src="/Website/img/apple_- logo-250x308.svg">
                                 </div>
                                 <div class="partner-logo">
-                                        <img src="img/google_- logo-1000x327.svg">
+                                        <img src="/Website/img/google_- logo-1000x327.svg">
                                 </div>
                                 <div class="partner-logo">
-                                        <img src="img/huawei_- logo-500x508.svg">
+                                        <img src="/Website/img/huawei_- logo-500x508.svg">
                                 </div>
                                 <div class="partner-logo">
-                                        <img src="img/microsoft_- logo-1000x214.svg">
+                                        <img src="/Website/img/microsoft_- logo-1000x214.svg">
                                 </div>
                         </div>
 
@@ -127,93 +140,119 @@
                 </div>
         </div>
 
+
+
+
+
         <div class="contact-section">
                 <div class="contact-container">
-                    <div class="form-section">
-                        <h2 class="form-title">Contact Us</h2>
-                        <form>
-                            <div class="form-field">
-                                <label class="form-label" for="name">Name</label>
-                                <input class="form-input" type="text" id="name" name="name" placeholder="Enter your name">
-                            </div>
-                            <div class="form-field">
-                                <label class="form-label" for="email">Email</label>
-                                <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com">
-                            </div>
-                            <div class="form-field">
-                                <label class="form-label" for="question">Question</label>
-                                <textarea class="form-textarea" id="question" name="question" placeholder="Enter question or feedback"></textarea>
-                            </div>
-                            <button class="form-button" type="submit">Submit</button>
-                        </form>
-                    </div>
-                    <div class="map-section">
-                        <!-- Embedded Google Map iframe -->
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13307.792937714416!2d31.193531523034792!3d29.93451768255247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145848e9806e27c7%3A0x5968de99dee4d7a4!2sPharaohs%20Academy!5e0!3m2!1sen!2seg!4v1730010352961!5m2!1sen!2seg"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
+                        <div class="form-section">
+                                <h2 class="form-title">Contact Us</h2>
+                                <form>
+                                        <div class="form-field">
+                                                <label class="form-label" for="name">Name</label>
+                                                <input class="form-input" type="text" id="name" name="name"
+                                                        placeholder="Enter your name">
+                                        </div>
+                                        <div class="form-field">
+                                                <label class="form-label" for="email">Email</label>
+                                                <input class="form-input" type="email" id="email" name="email"
+                                                        placeholder="your@email.com">
+                                        </div>
+                                        <div class="form-field">
+                                                <label class="form-label" for="question">Question</label>
+                                                <textarea class="form-textarea" id="question" name="question"
+                                                        placeholder="Enter question or feedback"></textarea>
+                                        </div>
+                                        <button class="form-button" type="submit">Submit</button>
+                                </form>
+                        </div>
+                        <div class="map-section">
+                                <!-- Embedded Google Map iframe -->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13307.792937714416!2d31.193531523034792!3d29.93451768255247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145848e9806e27c7%3A0x5968de99dee4d7a4!2sPharaohs%20Academy!5e0!3m2!1sen!2seg!4v1730010352961!5m2!1sen!2seg"
+                                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                        </div>
                 </div>
-            </div>
-        
+        </div>
 
-            <footer class="footer">
+
+        <footer class="footer">
                 <div class="footer-container">
-                    <div class="footer-logo">
-                        <img src="logo.png" alt="Ship Fast Logo">
-                        <p>Ship Fast</p>
-                    </div>
-            
-                    <div class="footer-links">
-                        <div class="footer-column">
-                            <h3>Products</h3>
-                            <ul>
-                                <li><a href="#">Solutions</a></li>
-                                <li><a href="#">Mobile App</a></li>
-                                <li><a href="#">Dashboard</a></li>
-                            </ul>
+                        <div class="footer-logo">
+                                <img src="img/logo.webp" alt="Ship Fast Logo">
                         </div>
-            
-                        <div class="footer-column">
-                            <h3>Integrations</h3>
-                            <ul>
-                                <li><a href="#">Shopify</a></li>
-                                <li><a href="#">WooCommerce</a></li>
-                                <li><a href="#">Custom APIs</a></li>
-                            </ul>
+
+                        <div class="footer-links">
+                                <div class="footer-column">
+                                        <h3>Products</h3>
+                                        <ul>
+                                                <li><a href="#">Solutions</a></li>
+                                                <li><a href="#">Mobile App</a></li>
+                                                <li><a href="#">Dashboard</a></li>
+                                        </ul>
+                                </div>
+
+                                <div class="footer-column">
+                                        <h3>Integrations</h3>
+                                        <ul>
+                                                <li><a href="#">Shopify</a></li>
+                                                <li><a href="#">WooCommerce</a></li>
+                                                <li><a href="#">Custom APIs</a></li>
+                                        </ul>
+                                </div>
+
+                                <div class="footer-column">
+                                        <h3>Use Cases</h3>
+                                        <ul>
+                                                <li><a href="#">SMEs</a></li>
+                                                <li><a href="#">Businesses</a></li>
+                                        </ul>
+                                </div>
+
+                                <div class="footer-column">
+                                        <h3>Company</h3>
+                                        <ul>
+                                                <li><a href="#">About us</a></li>
+                                                <li><a href="#">Careers</a></li>
+                                                <li><a href="#">Pricing</a></li>
+                                                <li><a href="#">FAQ</a></li>
+                                        </ul>
+                                </div>
                         </div>
-            
-                        <div class="footer-column">
-                            <h3>Use Cases</h3>
-                            <ul>
-                                <li><a href="#">SMEs</a></li>
-                                <li><a href="#">Businesses</a></li>
-                            </ul>
+
+                        <div class="footer-track">
+                                <a href="#" class="track-link">Track Shipment</a>
+                                <div class="footer-illustration">
+                                        <img src="img/2.png" alt="Delivery Bike and Truck">
+                                </div>
                         </div>
-            
-                        <div class="footer-column">
-                            <h3>Company</h3>
-                            <ul>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-            
-                    <div class="footer-track">
-                        <a href="#" class="track-link">Track Shipment</a>
-                        <div class="footer-illustration">
-                            <img src="bike.png" alt="Delivery Bike">
-                            <img src="truck.png" alt="Delivery Truck">
-                        </div>
-                    </div>
                 </div>
-            </footer>
-            
+        </footer>
+
+        <div id="chatbot">
+                <!-- Chat Icon -->
+                <div id="chat-icon" onclick="toggleChat()">
+                        💬
+                </div>
+
+                <!-- Chat Box (Hidden by Default) -->
+                <div id="chat-box" style="display: none;">
+                        <div id="chat-header">
+                                <span>Chatbot</span>
+                                <button onclick="toggleChat()">✖</button>
+                        </div>
+                        
+                        <div id="chat-input">
+                                <input type="text" id="user-input" placeholder="Type your message..." />
+                                <button id="send-button">Send</button>
+                        </div>
+                </div>
+        </div>
+
+
+
 
 </body>
 
