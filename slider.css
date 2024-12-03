@@ -1,10 +1,11 @@
 .box_img {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 200px;
     /* Set the height based on your image dimensions */
     overflow: hidden;
     margin: 0 auto;
+    margin-right: 1px;
     /* Center the slider container */
 }
 
